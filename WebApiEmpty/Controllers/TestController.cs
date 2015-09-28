@@ -4,9 +4,9 @@ namespace WebApiEmpty.Controllers
 {
     public class TestController : ApiController
     {
-        public int Get()
+        public int Get(int id)
         {
-            return 1000;
+            return id;
         }
     }
 }

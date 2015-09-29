@@ -14,12 +14,17 @@ namespace WebApiEmpty.Controllers
             public DateTime Date { get; set; }
         }
 
+        [Route("api/test")]
         public IHttpActionResult Get()
         {
-            var sample = new Sample {ID=10, Description = "bla", Date = DateTime.Now};
-            return Ok(sample);
+            return Ok();
         }
-
+        //public IHttpActionResult Get()
+        //{
+        //    var sample = new Sample {ID=10, Description = "bla", Date = DateTime.Now};
+        //    return Ok(sample);
+        //}
+        
         public IHttpActionResult Post()
         {
             return Ok();
